@@ -23,5 +23,4 @@ function buy(name) {
 function checkout()
 {
     document.querySelectorAll('#cart tbody tr').forEach(row => row.remove());
-    alert("thanks for buyin")
 }
