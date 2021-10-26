@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>999,5153</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2732,5032</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ManageDB_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="34">
@@ -50,7 +50,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="33">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="66">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -84,9 +84,10 @@
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ManageDB" sap:VirtualizedContainerService.HintSize="1009,5088" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ManageDB" sap:VirtualizedContainerService.HintSize="1009,4927" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="tests" />
       <Variable x:TypeArguments="sd:DataTable" Name="CShoplistDT" />
@@ -171,8 +172,6 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:OutputDataTable DataTable="[ShoplistDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="967,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[tests]" />
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="967,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[tests]" />
     <Assign sap:VirtualizedContainerService.HintSize="967,60" sap2010:WorkflowViewState.IdRef="Assign_5">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Double">[total]</OutArgument>
