@@ -158,3 +158,7 @@ delete from orders
 delete from expenses
 update orders set total=7 from client where client.clientID = orders.oClientID;
 select clientID from client where client.clientName='Tammy';
+
+select client.clientID, client.clientName, client.clientEmail, orders.total from
+client LEFT JOIN orders on client.clientID = orders.oClientID 
+group by client.clientID, orders.total order by client.clientID ASC;
